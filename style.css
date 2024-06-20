@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     height: 100vh;
     width: 100%;
     background: #201f21;
@@ -12,21 +13,25 @@
     align-items: center;
     justify-content: center;
 }
-.input-box{
+
+.input-box {
     width: 400px;
     max-width: 90%;
     position: relative;
 }
-.input-box input{
-    width: 100;
+
+.input-box input {
+    width: calc(100% - 60px); /* Adjusted width to account for the button */
     height: 60px;
     padding: 0 20px;
     border: 1px solid #ccc;
     outline: none;
     color: #fff;
     background: transparent;
+    padding-right: 60px; /* Added padding to ensure text doesn't go under the button */
 }
-button{
+
+button {
     background: transparent;
     border: 0;
     outline: none;
@@ -36,18 +41,25 @@ button{
     top: 50%;
     transform: translateY(-50%);
     right: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-button img{
+
+button img {
     width: 35px;
 }
-#message{
+
+#message {
     position: absolute;
     bottom: -30px;
     color: #fff;
-    font-size: 15px;   
+    font-size: 15px;
     display: none;
-    
 }
-::placeholder{
+
+::placeholder {
     font-size: 15px;
 }
